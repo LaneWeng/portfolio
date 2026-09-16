@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOMADO — Lane Weng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#3a3a39;--soft:#85837c;--line:#dfded9;--warm:#fff4c7;--orange:#c66d28}*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Manrope,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{padding:0 23px}.nav{height:63px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;font:500 11px 'DM Mono',monospace;text-transform:uppercase}.brand{font:600 13px Manrope;text-transform:none;letter-spacing:-.06em}.back{border-bottom:1px solid var(--ink);padding-bottom:4px}.hero{padding:26px 0 8px}.kicker,.eyebrow,.meta{font:10px/1.3 'DM Mono',monospace;text-transform:uppercase;color:var(--soft)}h1{font:600 clamp(65px,13.5vw,205px)/.73 Manrope,sans-serif;letter-spacing:-.14em;margin:32px 0 44px}.hero-video{height:75vh;min-height:520px;background:#161616}.hero-video video{width:100%;height:100%;object-fit:cover}.summary{display:grid;grid-template-columns:1fr 1.55fr;gap:8vw;padding:74px 0 112px;border-bottom:1px solid var(--line)}.summary p{font-size:clamp(25px,3.75vw,55px);line-height:1.02;letter-spacing:-.08em;margin:0}.summary em{font:italic 400 1em 'Playfair Display',serif;color:var(--orange)}.facts{font:12px/1.3 'DM Mono',monospace;display:grid;grid-template-columns:1fr 1fr;gap:28px 18px}.facts span{display:block;color:var(--soft);margin-bottom:5px}.case{display:grid;grid-template-columns:1fr 1.55fr;gap:8vw;padding:32px 0 105px;border-bottom:1px solid var(--line)}.case h2{font:600 12px Manrope;text-transform:uppercase;margin:0}.case-content{display:grid;gap:48px}.case-content h3{font-size:clamp(30px,3.1vw,47px);letter-spacing:-.075em;line-height:.96;margin:0 0 16px}.case-content p{font-size:16px;line-height:1.42;max-width:710px;margin:0}.goals{padding:0;margin:20px 0 0;list-style:none;font-size:16px;line-height:1.45}.goals li{padding-left:17px;position:relative}.goals li:before{content:"•";position:absolute;left:0}.media-wide{width:100%;height:72vh;min-height:470px;overflow:hidden;background:#ddd}.media-wide img,.media-wide video{width:100%;height:100%;display:block;object-fit:cover}.stack{display:grid;grid-template-columns:1fr 1fr;gap:6px}.stack .media-wide{height:560px;min-height:0}.placeholder{background:#e7e7e4;color:#73736e;position:relative;min-height:360px;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font:10px/1.35 'DM Mono',monospace;text-transform:uppercase}.placeholder:before{content:"Replace with asset";position:absolute;left:14px;top:14px;font-size:9px;color:#92928d}.placeholder span{max-width:220px}.reels{display:grid;grid-template-columns:1fr 1fr;gap:6px}.reels video{width:100%;height:680px;background:#222;object-fit:cover}.performance{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.metric{background:#e7e7e4;min-height:250px;padding:18px;display:flex;flex-direction:column;justify-content:space-between}.metric small{font:10px 'DM Mono',monospace;text-transform:uppercase;color:#74746f}.metric strong{font-size:clamp(28px,4vw,56px);letter-spacing:-.09em;font-weight:500;color:#888882}.metric em{font:10px/1.3 'DM Mono',monospace;color:#73736e;font-style:normal}.footer{border-top:1px solid var(--ink);padding:17px 0 24px;display:flex;justify-content:space-between;font:10px 'DM Mono',monospace;text-transform:uppercase}@media(max-width:720px){.wrap{padding:0 14px}.hero-video{height:58vh;min-height:380px}.summary,.case{grid-template-columns:1fr;padding:55px 0 70px;gap:36px}.facts{gap:22px 12px}.case-content{gap:37px}.media-wide{height:52vh;min-height:340px}.stack,.reels{grid-template-columns:1fr}.stack .media-wide{height:450px}.reels video{height:500px}.performance{grid-template-columns:1fr}.metric{min-height:175px}.footer{gap:15px;flex-wrap:wrap}}
+</style>
+<style>
+.hero-layout{display:grid;grid-template-columns:minmax(120px,.42fr) minmax(260px,1fr) minmax(220px,.72fr);gap:4vw;align-items:start;margin-top:34px}.case-index{display:grid;gap:9px;padding-top:8px;font:10px/1.3 'DM Mono',monospace;text-transform:uppercase;color:var(--soft)}.case-index a{transition:color .2s ease}.case-index a:hover{color:var(--ink)}.hero-copy h1{margin:0;font-size:clamp(60px,8vw,125px);line-height:.82}.hero-subtitle{font-size:clamp(16px,1.8vw,25px);line-height:1.1;letter-spacing:-.05em;margin:22px 0 0;max-width:300px}.hero-image{width:100%;height:auto;max-height:none;overflow:visible;background:transparent}.hero-image img{display:block;width:100%;height:auto;object-fit:contain}.nomado-gallery .phone-slide{flex-basis:clamp(190px,25vw,285px)}.nomado-gallery .phone-slide>span:last-child{display:block;padding-top:12px;font:10px 'DM Mono',monospace;text-transform:uppercase;color:var(--soft);opacity:0;transition:opacity .2s ease}.nomado-gallery .phone-slide:hover>span:last-child{opacity:1}.visual-case .identity-system{max-width:620px}.visual-case .identity-system img{width:100%;height:auto;object-fit:contain}@media(max-width:900px){.hero-layout{grid-template-columns:130px 1fr .75fr;gap:24px}.hero-copy h1{font-size:clamp(54px,9vw,96px)}}@media(max-width:720px){.hero-layout{grid-template-columns:1fr;gap:28px;margin-top:26px}.case-index{display:flex;flex-wrap:wrap;gap:7px 14px;order:2}.hero-copy{order:1}.hero-image{order:3;max-width:360px}.hero-copy h1{font-size:clamp(58px,18vw,100px)}.hero-subtitle{margin-top:15px}.nomado-gallery .phone-slide{flex-basis:68vw}.nomado-gallery .phone-slide>span:last-child{opacity:1}}
+body{background:#a9d1f0 url("soft-focus-cloud-sky.png") center/cover fixed no-repeat}.wrap,.hero,.summary,.case{background:transparent}
+</style>
+<style>
+/* NOMADO page-only composition using the existing case-page primitives. */
+.hero h1{max-width:850px;text-transform:uppercase}.subtitle{font-size:clamp(20px,2.2vw,32px);line-height:1.1;letter-spacing:-.06em;margin:-24px 0 38px}.hero-image{height:auto;min-height:0;background:transparent}.hero-image img{width:100%;height:auto;display:block;max-height:none;object-fit:contain}.overview-note{max-width:700px}.text-only{min-height:300px}.text-only .case-content{max-width:760px}.asset{width:100%;overflow:hidden;background:transparent}.asset img,.asset video{width:100%;height:auto;display:block;object-fit:contain}.visual-case{display:block}.visual-case h2{margin-bottom:32px}.visual-case .case-content{max-width:none}.visual-case .case-content>div:first-child{max-width:680px}.strategy-visual{height:auto;max-height:none}.strategy-visual img{height:auto}.identity-system{height:auto;background:transparent}.identity-system img{height:auto}.photo-feature{height:auto}.photo-feature img{height:auto;object-fit:contain}.stack .media-wide{height:auto;min-height:0}.stack .media-wide img{height:auto;object-fit:contain}.role-label{padding:10px 0 0;font:10px 'DM Mono',monospace;color:var(--soft);text-transform:uppercase}.keywords{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.keywords span{border:1px solid var(--line);padding:8px 10px;font:10px 'DM Mono',monospace;text-transform:uppercase}.outcomes .performance{margin-top:8px}.outcomes .metric{background:transparent;border-top:1px solid var(--line);min-height:180px;padding:18px 0}.outcomes .metric strong{color:var(--ink);font-size:clamp(18px,2.4vw,32px);letter-spacing:-.04em}.transition-link{border-top:1px solid var(--ink);padding-top:17px}.hero h1,.case-content h3{font-weight:400}.case h2{font-weight:400;letter-spacing:.02em}.case-content p{max-width:650px}@media(max-width:720px){.hero h1{max-width:none}.hero-image img{max-height:none}.subtitle{margin:-12px 0 28px}.visual-case h2{margin-bottom:24px}.outcomes .performance{grid-template-columns:1fr}.outcomes .metric{min-height:140px}}
+</style>
+<style>
+.reels{grid-template-columns:repeat(2,1fr)}.reels video{height:auto;object-fit:contain;background:transparent}@media(max-width:720px){.reels{grid-template-columns:1fr}}
+</style>
+<style>
+.visual-case .strategy-visual,.visual-case .identity-system{max-width:820px}.comparison{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}.comparison-card{border-top:1px solid var(--ink);padding:16px 0;min-height:190px}.comparison-card span{display:block;font:10px 'DM Mono',monospace;color:var(--soft);text-transform:uppercase;margin-bottom:24px}.comparison-card h4{font-size:clamp(22px,2.5vw,36px);font-weight:400;letter-spacing:-.06em;line-height:1;margin:0 0 20px}.comparison-card p{font:11px/1.4 'DM Mono',monospace;color:var(--soft);margin:0}.comparison-card.after{background:var(--warm);padding:16px}.comparison-card.after span,.comparison-card.after p{color:var(--ink)}@media(max-width:720px){.visual-case .strategy-visual,.visual-case .identity-system{max-width:100%}.comparison{grid-template-columns:1fr}.comparison-card{min-height:150px}}
+</style>
+<style>
+.post-system,.campaign-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.post-system .asset,.campaign-grid .asset{height:auto;min-height:0}.post-system img,.campaign-grid img{height:auto;object-fit:contain}.campaign-grid video{width:100%;height:auto;display:block;object-fit:contain}.photo-support-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.photo-support-grid .asset{height:auto;min-height:0}.photo-support-grid img{height:auto;object-fit:contain}@media(max-width:720px){.post-system,.campaign-grid{grid-template-columns:1fr 1fr}.post-system .asset,.campaign-grid .asset{height:auto}.photo-support-grid{grid-template-columns:repeat(3,1fr)}}
+</style>
+<style>
+.photo-feature{max-width:560px}@media(max-width:720px){.photo-feature{max-width:100%}}
+</style>
+<style>
+.nomado-gallery{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;padding:4px 0 20px;cursor:grab}.nomado-gallery:active{cursor:grabbing}.nomado-gallery .phone-slide{flex:0 0 clamp(190px,25vw,285px);scroll-snap-align:start;color:inherit}.nomado-gallery .phone-shell{display:block;background:#151515;border:8px solid #161616;border-radius:25px;padding:5px;box-shadow:0 10px 22px rgba(0,0,0,.16);overflow:hidden;aspect-ratio:9/17}.nomado-gallery .phone-shell:before{content:"";display:block;width:34%;height:4px;margin:0 auto 5px;border-radius:4px;background:#555}.nomado-gallery .phone-shell img{display:block;width:100%;height:calc(100% - 9px);object-fit:contain;background:#eee;border-radius:12px}.nomado-gallery .phone-slide>span:last-child{opacity:0;transform:translateY(4px);transition:opacity .2s ease,transform .2s ease}.nomado-gallery .phone-slide:hover>span:last-child{opacity:1;transform:none}@media(max-width:720px){.nomado-gallery{gap:14px}.nomado-gallery .phone-slide{flex-basis:68vw}.nomado-gallery .phone-slide>span:last-child{opacity:1;transform:none}}
+</style>
+</head>
+<style>
+.hero-facts{grid-template-columns:repeat(2,1fr)!important;gap:18px 14px}.hero-facts>div:nth-child(2){grid-column:span 2}@media(max-width:720px){.hero-facts{grid-template-columns:1fr!important}.hero-facts>div:nth-child(2){grid-column:auto}}
+</style>
+<style>
+.nomado-gallery-window{width:100%;overflow:hidden}.nomado-gallery{display:grid!important;grid-template-rows:repeat(2,minmax(0,auto))!important;grid-auto-flow:column!important;grid-auto-columns:clamp(180px,20vw,250px)!important;gap:18px 10px;width:max-content!important;animation:spotlightDrift 28s ease-in-out infinite alternate}.spotlight-slide{display:block;color:inherit}.spotlight-slide img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;transition:transform .35s ease}.spotlight-slide:hover img{transform:translateY(-7px) scale(1.015)}.spotlight-slide span{display:block;padding-top:9px;font:10px 'DM Mono',monospace;text-transform:uppercase;color:var(--soft);opacity:0;transition:opacity .2s ease}.spotlight-slide:hover span{opacity:1}@media(max-width:720px){.nomado-gallery{grid-auto-columns:42vw!important;gap:14px 8px}.spotlight-slide span{opacity:1}}
+</style>
+<style>
+.hero-layout>.hero-image{width:66.666%;max-width:none}.midsummer-pair{display:grid;grid-template-columns:1fr 1fr;gap:6px;max-width:820px}.midsummer-pair .strategy-visual{max-width:none}.midsummer-pair img{width:100%;height:auto;display:block;object-fit:contain}.nomado-gallery-window{width:100%;overflow:hidden}.nomado-gallery{display:grid;grid-template-rows:repeat(2,auto);grid-auto-flow:column;grid-auto-columns:clamp(180px,20vw,250px);gap:18px 10px;width:max-content;animation:spotlightDrift 28s ease-in-out infinite alternate}.nomado-gallery:hover{animation-play-state:paused}.spotlight-slide{display:block;color:inherit}.spotlight-slide img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;transition:transform .35s ease}.spotlight-slide:hover img{transform:translateY(-7px) scale(1.015)}.spotlight-slide span{display:block;padding-top:9px;font:10px 'DM Mono',monospace;text-transform:uppercase;color:var(--soft);opacity:0;transition:opacity .2s ease}.spotlight-slide:hover span{opacity:1}@keyframes spotlightDrift{from{transform:translateX(0)}to{transform:translateX(-18%)}}@media(max-width:720px){.hero-layout>.hero-image{width:66.666%;max-width:240px}.midsummer-pair{grid-template-columns:1fr}.nomado-gallery{grid-auto-columns:42vw;gap:14px 8px}.spotlight-slide span{opacity:1}}
+</style>
+<body>
+<main class="wrap">
+<nav class="nav">
+<a class="brand" href="lane-weng-portfolio-preview.html">Lane Weng</a>
+<a class="back" href="lane-weng-portfolio-preview.html#work">← Back to work</a>
+</nav>
+<header class="hero">
+<div class="kicker">Overview · Nomado Art House</div>
+<div class="hero-layout">
+<nav class="case-index" aria-label="Case study index">
+<a href="#overview">Overview</a>
+<a href="#context">Context</a>
+<a href="#direction">Direction</a>
+<a href="#identity">Visual system</a>
+<a href="#applications">Selected work</a>
+<a href="#outcomes">Outcomes</a>
+</nav>
+<div class="hero-copy"><h1>NOMADO</h1><p class="hero-subtitle">Brand Identity &amp; Social Campaign</p><div class="facts hero-facts"><div><span>Role</span>Marketing Specialist / Visual Designer</div><div><span>Objective</span>Support exhibition awareness and consistent publishing.</div><div><span>Scope</span>Visual Identity, Content Strategy, Photography, Copywriting, Reels</div><div><span>Audience</span>Emily Carr students / Alumni, local art audiences</div><div><span>Platform</span>Instagram / Social media</div><div><span>Year</span>2026—Present</div></div></div>
+<div class="hero-image asset">
+<img src="nomado-house-assets/1.PNG" alt="Nomado Midsummer Hustle artist spotlight campaign image">
+</div>
+</div>
+</header>
+<section class="summary" id="overview">
+<p class="summary-intro"><em>Nomado Art House</em> exhibition communications connected content planning, visual direction, photography and social production.</p>
+<div class="facts">
+<div><span>Role</span>Marketing Specialist / Visual Designer</div>
+<div><span>Scope</span>Visual Identity, Content Strategy, Photography, Copywriting, Reels</div>
+<div><span>Year</span>2026—Present</div>
+</div>
+</section>
+<section class="case text-only" id="context">
+<h2>Context</h2>
+<div class="case-content">
+<div>
+<h3>Turning exhibition plans into a consistent content system.</h3>
+<p>Nomado Art House needed coordinated content around exhibition launches and gallery events. The work connected campaign scheduling, visual identity assets, photography, copywriting and short-form video into one repeatable communication workflow.</p>
+</div>
+</div>
+</section>
+<section class="case visual-case" id="direction">
+<h2>Direction</h2>
+<div class="case-content">
+<div><h3>Content planning with a visual point of view.</h3><p>Planned and managed social content around exhibition launches and gallery events, while developing the visual direction for artist stories and campaign communication.</p></div>
+<div class="facts strategy-facts"><div><span>Audience</span>Emily Carr students / Alumni<br>Local Art Galleries</div><div><span>Focus</span>Content Calendar / Art Direction</div><div><span>Platform</span>Instagram / Social media</div><div><span>Objective</span>Support exhibition awareness, consistent publishing and audience engagement.</div><div><span>Content</span>Photography / Reels / Copywriting</div></div>
+</div>
+</section>
+<section class="case visual-case" id="identity">
+<h2>Identity</h2>
+<div class="case-content">
+<div><h3>A visual system made for repeatable content.</h3><p>Brand identity and photographic direction shaped a consistent visual language for the gallery’s exhibition communications.</p></div>
+<div class="asset identity-system"><img src="nomado-house-assets/Nomado Art House brand identity and Design guideline (6).png" alt="Nomado Art House brand identity and design guideline"></div>
+<div class="asset identity-system"><img src="nomado-house-assets/nomado-brand-sheet.png" alt="Nomado Art House brand identity sheet"></div>
+<div class="asset strategy-visual"><img src="nomado-house-assets/photography guidlines copy.png" alt="Nomado photography guideline"></div>
+<div class="keywords"><span>Soft natural light</span><span>Natural texture</span><span>Negative space</span><span>Muted pastel grading</span></div>
+<div class="midsummer-pair"><div class="asset strategy-visual"><img src="nomado-house-assets/Midsummer Hustle.png" alt="Midsummer Hustle project mood board"></div><div class="asset strategy-visual"><img src="nomado-house-assets/midsummer-hustle-poster.png" alt="Midsummer Hustle campaign poster"></div></div>
+</div>
+</section>
+<section class="case visual-case" id="applications">
+<h2>Selected work</h2>
+<div class="case-content">
+<div><h3>From artist story to audience touchpoint.</h3><p>Produced photography, social posts, copywriting and campaign assets to make exhibition communication clearer and more engaging.</p></div>
+<div class="asset photo-feature"><img src="nomado-house-assets/MISA copy.png" alt="Nomado artist portrait with artwork"></div>
+<div class="role-label">Art Direction / Photography / Editing / Content Production</div>
+<div><h3>Midsummer Hustle promotional campaign.</h3><p>Poster and Reel assets turn the visual direction into promotional content for the exhibition.</p></div>
+<div class="campaign-grid">
+<div class="asset"><img src="nomado-house-assets/misa-post-01.png" alt="Nomado Misa artist spotlight post"></div>
+<div class="asset"><video autoplay muted loop playsinline controls preload="metadata"><source src="nomado-house-assets/Comp 1 copy.mp4" type="video/mp4"></video></div>
+<div class="asset"><video autoplay muted loop playsinline controls preload="metadata"><source src="nomado-house-assets/Comp 1_2 copy.mp4" type="video/mp4"></video></div>
+</div>
+<div><h3>Reusable Artist Spotlight template.</h3><p>One repeatable editorial format designed to introduce different artists with a consistent visual voice.</p></div>
+<div class="nomado-gallery-window" aria-label="Nomado Artist Spotlight designs">
+<div class="nomado-gallery">
+<a class="spotlight-slide" href="nomado-house-assets/1 2.png" target="_blank"><img src="nomado-house-assets/1 2.png" alt="Nomado Artist Spotlight design 1"><span>Open design 01 ↗</span></a>
+<a class="spotlight-slide" href="nomado-house-assets/2 2.png" target="_blank"><img src="nomado-house-assets/2 2.png" alt="Nomado Artist Spotlight design 2"><span>Open design 02 ↗</span></a>
+<a class="spotlight-slide" href="nomado-house-assets/3.png" target="_blank"><img src="nomado-house-assets/3.png" alt="Nomado Artist Spotlight design 3"><span>Open design 03 ↗</span></a>
+<a class="spotlight-slide" href="nomado-house-assets/4.png" target="_blank"><img src="nomado-house-assets/4.png" alt="Nomado Artist Spotlight design 4"><span>Open design 04 ↗</span></a>
+<a class="spotlight-slide" href="nomado-house-assets/5 2.png" target="_blank"><img src="nomado-house-assets/5 2.png" alt="Nomado Artist Spotlight design 5"><span>Open design 05 ↗</span></a>
+</div>
+</div>
+</div>
+</section>
+<section class="case visual-case outcomes" id="outcomes">
+<h2>Outcomes</h2>
+<div class="case-content">
+<div><h3>Contribution to the objective.</h3><p>Connected the content calendar, visual direction and social production into a clearer campaign workflow for exhibition communication.</p></div>
+<div class="comparison">
+<div class="comparison-card"><span>Objective contribution</span><h4>Consistent campaign communication</h4><p>Established a repeatable visual approach across artist stories, photography, social posts and Reels.</p></div>
+<div class="comparison-card after"><span>Engagement growth</span><h4>[DATA TO CONFIRM]</h4><p>Verified engagement-growth data was not included in the supplied project materials.</p></div>
+</div>
+</div>
+</section>
+<footer class="footer transition-link">
+<a href="lane-weng-portfolio-preview.html#work">← Back to projects</a>
+<a href="nomado-house-assets/midsummer-hustle-poster.pdf" target="_blank">Open poster PDF ↗</a>
+<span>Nomado / Lane Weng</span>
+</footer>
+</main>
+</body>
+</html>
